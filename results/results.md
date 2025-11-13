@@ -4,6 +4,8 @@
 ---
 
 ## Details  
+산출물들의 용량 문제로 `files.zip`으로 `memory_bank/`와 `performance/`를 압축해서 올렸습니다.
+
 이 디렉토리에는 CoraFull, Arxiv, Reddit, Products 네 가지 데이터셋에 대해 SAGE-CoG 기반 그래프 연속 학습 실험을 수행하며 생성된 결과가 포함되어 있습니다.  
 각 실험에서는 메모리 예산(budget)에 따라 생성된 **슈퍼노드 기반 압축 그래프(memory bank)** 와 **평가 결과(performance 파일)** 가 저장되어 있어, 동일 설정으로 실험을 다시 수행하거나 결과를 검증하는 데 활용하실 수 있습니다.
 
@@ -19,23 +21,10 @@
 
 ### **Average Performance (AP)**  
 Average Performance는 연속 학습 시나리오에서 **각 단계(Task t)** 를 학습한 후 해당 시점까지 등장한 모든 작업에 대한 정확도를 평균낸 지표입니다.  
-즉, 모델의 전반적인 성능 유지 능력을 평가하며 다음과 같이 계산됩니다:
-
-\[
-AA = \frac{1}{T} \sum_{t=1}^{T} Acc_{t,t'}
-\]
-
-여기서 \(Acc_{t,t'}\)는 *t번째 작업 학습 후* 이전 모든 작업에 대한 정확도를 의미합니다.
 
 ### **Average Forgetting (AF)**  
 Average Forgetting은 이전에 학습한 작업(Task i)의 성능이 시간이 지남에 따라 얼마나 감소했는지를 측정하는 지표입니다.  
-각 작업별로 **최고 정확도와 최종 정확도의 차이** 를 측정하여 평균을 계산합니다:
-
-\[
-AF = \frac{1}{T-1} \sum_{i=1}^{T-1} \left( \max_{t \leq T} Acc_{t,i} - Acc_{T,i} \right)
-\]
-
-이 지표는 모델이 Catastrophic Forgetting 문제를 얼마나 잘 해결하는지를 평가하는 핵심 값입니다.
+각 작업별로 **최고 정확도와 최종 정확도의 차이** 를 측정하여 평균을 계산합니다.
 
 ---
 
