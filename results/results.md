@@ -33,4 +33,6 @@ Average Forgetting은 이전에 학습한 작업(Task i)의 성능이 시간이 
 각 실험은 반복 횟수(repeat), 학습 epoch, 메모리 budget 등이 고정된 설정으로 실행되므로, 제안한 SAGE-CoG 방법의 재현성을 손쉽게 확인하실 수 있습니다.
 아래와 같이 스크립트 파일을 실행할 수 있습니다.
 
-```sh reproducibility.sh```
+```
+sh reproducibility.sh
+```
