@@ -43,4 +43,6 @@ src/
 ## Run
 아래 스크립트 파일을 실행하면 CoraFull dataset에 대한 실험을 진행할 수 있습니다.
 
-```sh run.sh```
+```
+sh run.sh
+```
