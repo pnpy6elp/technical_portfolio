@@ -1,1 +1,2 @@
-# technical_portfolio
+# Technical Porfolio
+## 24510111 Boyoung Lim
