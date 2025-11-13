@@ -24,7 +24,7 @@ def get_result_file_name(args):
         result_name = f"_random"
  
     elif args.cgl_method == "sage_cog":
-        result_name = f"_SAGE_CoG_top{args.top_k}_max{args.max_supernodes}_fixed{args.fixed_supernode_count}_communityWeight{args.community_weight}_minor_ratio{args.minority_ratio}_{args.community_algo}"
+        result_name = f"_sage_cog"
 
     elif "cgm" in args.cgl_method:
         cgm_args = eval(args.cgm_args)

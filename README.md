@@ -2,11 +2,11 @@
 24510111 Boyoung Lim
 
 ### Python, SQL, R, Java, Scala, Go, C/C++, Javascript 등 데이터 처리 언어 활용 능력
-**[./src/src.md](./src/src.md)**: Python
+**[./src/src.md](./src/src.md)**: Python을 활용해 커뮤니티 기반의 연속 학습 프레임워크를 구현하였습니다.
 ### Linux, Docker, Virtual Machines, Kubernetes 등을 활용한 데이터 활용 및 분석을 위한 환경 구축 여부
-**[./yaml/docker.md](./yaml/docekr.md)**: linux 환경에서 Docker를 활용하여 Pytorch 기반의 데이터 처리 및 학습 환경을 구축했습니다.
+**[./yaml/docker.md](./yaml/docker.md)**: linux 환경에서 Docker를 활용하여 Pytorch 기반의 데이터 처리 및 학습 환경을 구축했습니다.
 ### 머신러닝 라이브러리를 이용한 재현 가능한 개발 결과물 공개 여부
-**[./results/results.md](./results/results.md)**: 
+**[./results/results.md](./results/results.md)**: 머신러닝 라이브러리를 이용해서 재현성을 위해 제안하는 아이디어의 결과물을 공개하였습니다. 제가 실험에서 생성한 각 데이터셋 별 모델 파일과 성능 측정 결과를 파일들로 공개하였습니다.
 
 </br>
 </br>
