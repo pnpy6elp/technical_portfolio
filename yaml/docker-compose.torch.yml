@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  torch_container:
+    image: nvcr.io/nvidia/pytorch:23.12-py3
+    container_name: torch_container
+    privileged: true
+    ports:
+      - "60005:8888"
+      - "60007:8080"
+      - "2183:2181"
+      - "9094:9092"
+      - "8085:8083"
+    volumes:
+      - ~/workspace/:/workspace
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    stdin_open: true     
+    tty: true            
+    restart: unless-stopped
