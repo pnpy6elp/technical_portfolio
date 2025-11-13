@@ -7,4 +7,6 @@ nvidia에서 배포 중인 pytorch 이미지를 사용해 보다 빠르게 pytor
 ## Run
 아래 명령어로 컨테이너를 실행할 수 있습니다.
 
-```docker-compose -f ./docker-compose.torch.yml up -d```
+```
+docker-compose -f ./docker-compose.torch.yml up -d
+```
